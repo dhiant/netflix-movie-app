@@ -1,0 +1,102 @@
+.navbar {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .container {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 25px;
+        margin-right: 40px;
+        width: 120px;
+      }
+      span {
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+
+      .navbar-icon {
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .profile {
+        .options {
+          display: none;
+          background: var(--main-color);
+        }
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+
+            span {
+              padding: 5px 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar .container {
+    .left {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .container {
+    .left {
+      span {
+        margin-right: 10px;
+      }
+      img {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar .container {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar .container {
+    font-size: larger;
+  }
+}
