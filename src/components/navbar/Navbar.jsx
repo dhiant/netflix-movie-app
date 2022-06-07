@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbar.scss";
+import Logo from "../../images/netflix_logo.png";
+import ProfilePic from "../../images/profile_pic.jpg";
 import { GoSearch } from "react-icons/go";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { RiArrowDropDownFill } from "react-icons/ri";
@@ -8,10 +10,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="left">
-          <img
-            src="https://www.gizmochina.com/wp-content/uploads/2020/03/Netflix-Logo.png"
-            alt="netflix logo"
-          />
+          <img src={Logo} alt="netflix logo" />
           <div className="links">
             <span>Home</span>
             <span>Series</span>
@@ -25,10 +24,7 @@ const Navbar = () => {
         <div className="right">
           <GoSearch className="navbar-icon" size="20px" />
           <IoNotificationsSharp size="20px" />
-          <img
-            src="https://blog.logomyway.com/wp-content/uploads/2020/08/netflix-logo-2-1.jpg"
-            alt="profile"
-          />
+          <img src={ProfilePic} alt="profile" />
 
           {/* menu div */}
           <div className="profile">
