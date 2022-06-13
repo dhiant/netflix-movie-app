@@ -8,15 +8,13 @@ export default function Watch() {
         <AiOutlineArrowLeft />
         Home
       </div>
-      <iframe
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/Go8nTmfrQd8"
-        title="Thor: Love and Thunder"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <video
+        className="video"
+        autoPlay
+        progress="true"
+        controls
+        src="https://youtu.be/Go8nTmfrQd8"
+      />
     </div>
   );
 }
